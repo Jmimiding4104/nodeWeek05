@@ -40,6 +40,8 @@ app.use(function(req, res, next) {
     http.notFound(req, res)
   });
 
+
+// dev
 app.use(function(err, req, res, next){
   res.status(500).json({
     'message': errorMessage(err) // err.message ? err.message : 
